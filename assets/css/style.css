@@ -1,0 +1,314 @@
+/* portfolio style sheet */
+
+* {
+    box-sizing: border-box;
+}
+/* This is the header for all 3 webpages */
+
+header {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background: #ffffff;
+    height: 100px;
+    margin-bottom: 40px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+/* This is the navigation content css styles for all 3 webpages */
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    height: 100px;
+    position: absolute;
+    margin: 0 auto;
+    margin-right: 10px;
+    top: 20px;
+    right: 17%;
+}
+  
+li {
+    display: inline;
+    padding-left: 15px;
+}
+  
+a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 3;
+    color: #777777;
+  }
+
+@media (hover: hover) {
+    a:hover {
+        color: #F6DB5F;
+    }
+}
+
+/* This is the heading for all 3 web pages */
+
+h1 {
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    left: 16.5%;
+    width: 200px;
+    height: 100px;
+    color: #ffffff;
+    background: #4aaaa5;
+    text-align: center;
+    padding-top: 33px;
+    margin: 0 auto;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    color: #4aaaa5;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/* Here is the body css style for all 3 webpages */
+
+body {
+    background-image: url(../images/tweed_@2X.png);
+    z-index: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 0px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-home {
+    background: #ffffff;
+    width: 960px;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Here is the portfolio page css */
+
+.box-portfolio {
+    background: #ffffff;
+    width: 960px;
+    height: 900px;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.portfolio {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+}
+
+@media (hover:hover) {
+    .portfolio:hover {
+        filter: opacity(100%);
+    }
+}
+
+.box-1a {
+    background-image: url(../images/IMG_2556.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-1b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -40px;
+    left: -40px; 
+    z-index: 1;
+}
+
+.box-2a {
+    background-image: url(../images/IMG_2910.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    z-index: 0;
+}
+
+.box-2b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -40px;
+    left: 200px; 
+    z-index: 1;
+}
+
+.box-3a {
+    background-image: url(../images/IMG_4484.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 260px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-3b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -290px;
+    left: -40px; 
+    z-index: 1;
+}
+
+.box-4a {
+    background-image: url(../images/IMG_4738.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    z-index: 0;
+}
+
+.box-4b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -290px;
+    left: 200px; 
+    z-index: 1;
+}
+
+.box-5a {
+    background-image: url(../images/IMG_0110.jpg);
+    filter: opacity(75%);
+    position: absolute;
+    top: 500px;
+    left: -40px;
+    z-index: 0;
+}
+
+.box-5b {
+    position: absolute;
+    background: #4aaaa5;
+    padding-top: 22px;
+    width: 200px;
+    height: 66px;
+    bottom: -530px;
+    left: -40px; 
+    z-index: 1;
+}
+
+/* Here is the contact page css */
+
+.box-contact {
+    background: #ffffff;
+    width: 960px;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #777777;
+    padding-top: 20px;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin: 0;
+}
+
+input [type=text] {
+    border: .25px solid #777777;
+    margin: 8px 0;
+    padding: 14px 20px;
+}
+textarea {
+    height: 300px;
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Here is the footer css for all 3 webpages */
+
+footer {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #666666;
+    height: 100px;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 60px;
+    text-align: center;
+    color: #ffffff;
+}
+
