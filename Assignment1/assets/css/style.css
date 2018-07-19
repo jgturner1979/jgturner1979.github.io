@@ -1,4 +1,4 @@
-/* portfolio style sheet */
+/* Assigment #1 style sheet */
 
 * {
     box-sizing: border-box;
@@ -25,10 +25,16 @@ nav {
     top: 20px;
     right: 17%;
 }
-  
-li {
-    display: inline;
-    padding-left: 15px;
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li + li:before {
+    content: " | ";
+    padding: 0 10px;
+    color: #cccccc;
+
 }
   
 a {
@@ -146,6 +152,7 @@ img {
         filter: opacity(100%);
     }
 }
+/* Hangman box */
 
 .box-1a {
     background-image: url(../images/IMG_2556.jpg);
@@ -167,6 +174,8 @@ img {
     z-index: 1;
 }
 
+/* RPG Game box */
+
 .box-2a {
     background-image: url(../images/IMG_2910.jpg);
     filter: opacity(75%);
@@ -186,6 +195,8 @@ img {
     left: 200px; 
     z-index: 1;
 }
+
+/* Trivia Game box */
 
 .box-3a {
     background-image: url(../images/IMG_4484.jpg);
@@ -207,6 +218,8 @@ img {
     z-index: 1;
 }
 
+/* Rutgers Info Widget box */
+
 .box-4a {
     background-image: url(../images/IMG_4738.jpg);
     filter: opacity(75%);
@@ -226,6 +239,8 @@ img {
     left: 200px; 
     z-index: 1;
 }
+
+/* Rock Paper Scissors box */
 
 .box-5a {
     background-image: url(../images/IMG_0110.jpg);
@@ -272,15 +287,21 @@ img {
 label, input, textarea {
     width: 100%;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 input [type=text] {
-    border: .25px solid #777777;
+    font-size: 24px;
     margin: 8px 0;
     padding: 14px 20px;
 }
+
 textarea {
-    height: 300px;
+    border: solid .25px #777777;
+    margin: 8px 0;
+    padding: 14px 20px;
+    height: 200px;
+    overflow: auto;
 }
 
 .button {
@@ -292,6 +313,24 @@ textarea {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#name {
+    font-size: 18px;
+    padding: 5px;
+    color: #777777;
+}
+
+#mail {
+    font-size: 18px;
+    padding: 5px;
+    color: #777777;
+}
+
+#msg {
+    font-size: 18px;
+    padding: 5px;;
+    color: #777777;
 }
 
 /* Here is the footer css for all 3 webpages */
