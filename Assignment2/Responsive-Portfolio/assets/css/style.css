@@ -1,0 +1,286 @@
+/* portfolio style sheet */
+
+* {
+    box-sizing: border-box;
+}
+/* This is the header for all 3 webpages */
+
+header {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background: #ffffff;
+    width: 100%;
+    height: 100px;
+    /* margin-bottom: 40px; */
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+/* This is the navigation content css styles for all 3 webpages */
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    margin-top: 40px;
+    margin-right: 250px;
+    list-style-type: none;
+}
+  
+nav a {
+    /* display: inline; */
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #777777;
+    text-align: center;
+    text-decoration: none;
+    border-left: 2px solid #cccccc;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+
+@media (hover: hover) {
+    a:hover {
+        color: #F6DB5F;
+    }
+}
+
+/* This is the heading for all 3 web pages */
+
+h1 {
+    font-size: 24px;
+    float: left;
+    margin-left: 240px;
+    margin-top: auto;
+    width: 200px;
+    height: 100px;
+    color: #ffffff;
+    background: #4aaaa5;
+    text-align: center;
+    padding-top: 33px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    color: #4aaaa5;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+/* Here is the body css style for all 3 webpages */
+
+body {
+    margin: 0 auto;
+    background-image: url(../images/tweed_@2X.png);
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 0px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+    clear: both;
+}  
+
+.box-home {
+    background: #ffffff;
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Here is the portfolio page css */
+
+#portfolio-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+}  
+
+.box-portfolio {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.box {
+    filter: opacity(75%);
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+  
+.box h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+
+.auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+  
+@media (hover:hover) {
+    .box:hover {
+        filter: opacity(100%);
+    }
+}
+/* Here is the contact page css */
+
+.box-contact {
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #777777;
+    padding-top: 20px;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin: 0;
+}
+
+input [type=text] {
+    border: .25px solid #777777;
+    margin: 8px 0;
+    padding: 14px 20px;
+}
+textarea {
+    height: 300px;
+}
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Here is the footer css for all 3 webpages */
+
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;
+  }
+  
+
+/* Extra small devices (portrait phones, less than 640px) */
+@media (max-width: 640px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+    h1 {
+        margin-left: auto;
+    }
+
+    nav {
+        float: left;
+        margin-right: 0;
+    }
+
+    container {
+        margin-top: 20px;
+    }
+}    
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+    h1 {
+        margin-left: auto;
+    }
+
+    nav {
+        float: left;
+        margin-right: 0;
+    }
+}
+
+/* Medium devices (tablets, less than 980px) */
+@media (max-width: 980px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    h1 {
+        margin-left: auto;
+    }
+}
