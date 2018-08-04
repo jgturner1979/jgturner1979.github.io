@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323642;
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix {
+    overflow: auto;
+}
+
+header {
+    margin: 0 auto;
+    margin-top: 40px; 
+}
+
+img {
+    position: relative;
+    align-content: center;
+}
+
+.container-results {
+
+    margin: 0 auto;
+    background-color: #777777;
+    float: left;
+    margin: 10% 1% 15% 15%;
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+}
+
+.container-game {
+    margin: 0 auto;
+    background-color: #777777;
+    float: right;
+    margin: 10% 15% 15% 1%;
+    width: 400px;
+    height: 500px;
+    z-index: 1;
+}
+
+h3 {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Extra small devices (portrait phones, less than 640px) */
+@media (max-width: 640px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    container {
+        margin-top: 20px;
+    }
+}    
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, less than 980px) */
+@media (max-width: 1200px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .container-results {
+        background-color: #777777;
+        float: left;
+        margin: 10% 1% 15% 15%;
+        width: 400px;
+        height: 500px;
+        z-index: 1;
+    }
+    
+    .container-game {
+        background-color: #777777;
+        float: left;
+        margin: 10% 15% 15% 1%;
+        width: 400px;
+        height: 500px;
+        z-index: 1;
+    }
+}
