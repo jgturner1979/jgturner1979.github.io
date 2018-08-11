@@ -1,0 +1,50 @@
+body {
+    background-image: url(../images/stars.png);
+    background-repeat: no-repeat;
+    color: #1A2433;
+    font-family: 'IM Fell English', serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 100px;
+    color: #70041D;
+}
+
+h2 {
+    text-align: center;
+    color: #70041D;
+}
+
+.container{
+    background-color: #cedaee;
+    padding: 20px;
+    align-content: center;
+}
+
+h3, h4 {
+    margin-top: 10px;
+}
+
+#wins {
+    font-size: 30px;
+}
+
+#losses {
+    font-size: 30px;
+}
+
+#button {
+    align-content: center;
+    padding: 10px;
+}
+.crystal-image {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:1px;
+    border:1px solid #1A2433;
+}
