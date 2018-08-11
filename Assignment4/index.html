@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Wizards Duel</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>I solemnly swear that I am up to no good.</h1>
+        <h2>Select your first wizard.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" id="harry">
+        <div class="card">
+          <img class="card-img-top" src="../Assignment4/assets/images/harry_potter.jpg" alt="Harry Potter">
+          <div class="card-body">
+            <h5 class="card-title">Harry Potter</h5>
+            <p class="card-text">Gryffindor</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="health">Health: 100</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col" id="hermione">
+        <div class="card">
+          <img class="card-img-top" src="../Assignment4/assets/images/hermione_granger.jpg" alt="Hermione Granger">
+          <div class="card-body">
+            <h5 class="card-title">Hermione Granger</h5>
+            <p class="card-text">Gryffindor</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="health">Health: 100</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col" id="ron">
+        <div class="card">
+          <img class="card-img-top" src="../Assignment4/assets/images/ron_weasley.jpg" alt="Ron Weasley">
+          <div class="card-body">
+            <h5 class="card-title">Ron Weasley</h5>
+            <p class="card-text">Gryffindor</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="health">Health: 100</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col" id="draco">
+        <div class="card">
+          <img class="card-img-top" src="../Assignment4/assets/images/draco_malfoy.jpg" alt="Draco Malfoy">
+          <div class="card-body">
+            <h5 class="card-title">Draco Malfoy</h5>
+            <p class="card-text">Slytherin</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="health">Health: 100</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="gameboard">
+      <div class="col-2" id="attack">
+        <button type="button" class="btn btn-dark btn-lg">Attack</button>
+      </div>
+      <div class="col-5" id="player1"></div>
+      <div class="col-5" id="player2"></div>
+    </div>
+
+    <div class="row" id="defeated">
+      <div class="col" id="defeated1"></div>
+      <div class="col" id="defeated2"></div>
+      <div class="col" id="defeated3"></div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

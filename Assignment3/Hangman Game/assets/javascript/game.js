@@ -8,23 +8,46 @@ var gameWords = // Word list
         "tatooine",
     ];
 
-const maxTries = 10; // Maximum number of tries player has
-
-var guessedLetters = []; // Stores the letters the user guessed
-var currentWordIndex; // Index of the current word in the array
-var guessingWord = []; // This will be the word we actually build to match the current word
+var guessedLetters = []; // Stores the letters the user guessed correctly
+var currentWordArray = []; // Index of the current word in the array
+var lettersNotCorrect = []; // Stores the letters correctly guessed
 var remainingGuesses = 0; // How many tries the player has left        
 var wins = 0; // How many wins has the player racked up
 
-document.onkeyup = function(event) {
 
-    var guessedLetters = event.key;
+function initialize() {
+    const index = Math.floor(Math.random() * gameWords.length);
+    currentWordArray = gameWords[index].split("")
+    renderWord("");
+    console.log(currentWordArray);
+};
 
-        currentWordIndex = Math.floor(Math.random() * gameWords.length);
+function renderWord() {
 
-        for (var i = 0; i < gameWords[currentWordIndex.length]; i++) {
-            guessingWord.push("_");
-            document.getElementById("currentWord").innerHTML = guessingWord;
-        }
+    for (var i = 0; i < currentWordArray.length; i++) {
+        print += "_";
+    };
+};
+document.getElementById("currentWord").innerHTML = print;
 
+function fillWord(guessedLetters) {
+
+    if (guessedLetters) {
+
+        for (var j = 0; j < currentWordArray.length; j++) {
+
+            if (guessedLetters === currentWordArray[j]) {
+                guessedLetters[j].push();
+                console.log(print);
+
+            };
+        };
+        // document.getElementById("currentWord").innerHTML = guessedLetters;
+    };
+    window.addEventListener("load", initialize);
+
+    document.onkeyup = function (event) {
+
+        renderWord(event.key);
     }
+};

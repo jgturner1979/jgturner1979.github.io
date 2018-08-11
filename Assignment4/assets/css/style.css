@@ -1,0 +1,38 @@
+body {
+    background-image: url(../images/hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Jim Nightshade', cursive;
+    color: #330600;
+    /* margin-left: 8%; */
+}
+
+.container {
+    background-color: #9C998E;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 60px;
+    color: #7F6F6E;
+    text-align: center;
+    padding: 5px;
+}

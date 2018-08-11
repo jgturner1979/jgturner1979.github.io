@@ -16,8 +16,9 @@ header {
 }
 
 img {
-    position: relative;
-    align-content: center;
+    float: left;
+    margin: 0 auto;
+
 }
 
 .container-results {
@@ -46,6 +47,11 @@ h3 {
     padding: 10px;
     margin: 10px;
     text-align: center;
+}
+
+#currentWord {
+    text-align: center;
+    letter-spacing: 10px;
 }
 
 /* Extra small devices (portrait phones, less than 640px) */
