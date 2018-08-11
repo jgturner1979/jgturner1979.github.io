@@ -67,13 +67,15 @@ var imageArray = ["./assets/images/space.jpg", "./assets/images/reality.jpg", ".
         if (counter === goalNumber) {
             wins++;
             $("#wins").html("Wins: " + wins);
-            // resetGame();
+            alert("You win!");
+            resetGame();
         }
 
         else if (counter >= goalNumber) {
             losses++;
             $("#losses").html("Losses: " + losses);
-            // resetGame();
+            alert("You lost the game.");
+            resetGame();
         }
     });
 
